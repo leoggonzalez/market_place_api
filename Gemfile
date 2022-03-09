@@ -48,3 +48,5 @@ end
 
 gem 'rubocop'
 gem 'reek'
+
+gem "bcrypt", "~> 3.1"
