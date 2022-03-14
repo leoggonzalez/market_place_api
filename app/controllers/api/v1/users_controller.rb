@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update]
+  before_action :set_user, only: [:show, :update, :destroy]
   # POST /users
   def create
     @user = User.new(user_params)
@@ -21,6 +21,11 @@ class Api::V1::UsersController < ApplicationController
     else
       render json: @user.errors, status: :unprocessable_entity
     end
+  end
+  # DELETE /user/:id
+  def destroy
+    @user.destroy
+    head 204
   end
 
   private
