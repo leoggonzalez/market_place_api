@@ -86,6 +86,7 @@ GEM
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
+    jwt (2.3.0)
     kwalify (0.7.2)
     loofah (2.14.0)
       crass (~> 1.0.2)
@@ -191,6 +192,7 @@ DEPENDENCIES
   bcrypt (~> 3.1)
   bootsnap
   debug
+  jwt (~> 2.3)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
